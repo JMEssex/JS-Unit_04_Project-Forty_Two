@@ -1,0 +1,132 @@
+/* The dice visual you are seeing here was not my original creation. During my
+research I found a program called "www.unravelingflexbox.com" with a free training
+on how to design dice visuals which I found pleasing.I followed the program and
+entered it into my CSS and HTML code.
+
+Below is the weblink to the actual document I used to format these dice, as well
+as the actual PDF available in ./docs directory to openly disclose my resources.
+https://s3-us-west-2.amazonaws.com/unravelingflexbox/Unraveling+Flexbox+Sample.pdf*/
+
+
+.face-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.face-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-2 .pip:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+.face-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-3 .pip:nth-of-type(2) {
+  align-self: center;
+}
+
+.face-3 .pip:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+.face-4, .face-6 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-4 .column, .face-6 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.face-5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-5 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.face-5 .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+/* OTHER STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, .wrapper {
+  height: 100%;
+}
+
+body {
+  background: #183316;
+  color: #ffffff;
+  text-align: center;
+}
+
+.wrapper, #dice-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+section {
+    display: block;
+    background-color: rgba(255,255,255,.3);
+    height: 300px;
+    width: 165px;
+    margin: 40px 20px 0 auto;
+    border-radius: 39px;
+}
+
+h2, h4 {
+  display: flex;
+  list-style: none;
+}
+
+/* I am able to select all classes that start with "face" in them using ^= command */
+[class^="face"] {
+  margin: 16px;
+  padding: 4px;
+
+  background-color: #e7e7e7;
+  width: 104px;
+  height: 104px;
+  object-fit: contain;
+
+  box-shadow:
+    inset 0 5px white,
+    inset 0 -5px #bbb,
+    inset 5px 0 #d7d7d7,
+    inset -5px 0 #d7d7d7;
+
+  border-radius: 10%;
+}
+
+.pip {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+
+  background-color: #333;
+  box-shadow: inset 0 3px #111, inset 0 -3px #555;
+}

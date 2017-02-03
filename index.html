@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fourty-Two!</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <script
+      src="http://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="score-section" id="fireDiv">
+      <h3>Last 5 Scores</h3>
+      <h5>Brought to you by Firebase</h5>
+      <ol>
+        <li>24</li>
+        <li>0</li>
+        <li>21</li>
+        <li>test li</li>
+        <li>test li</li>
+      </ol>
+    </section>
+    <div class="wrapper">
+      <dice id="dice-visual">
+
+          <!-- Hard Coded Dice Examples -->
+
+    <!-- <div class="face-1">
+            <span class="pip"></span>
+          </div>
+          <div class="face-2">
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="face-3">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+          </div>
+          <div class="face-4">
+            <div class="column">
+              <span class="pip"></span>
+              <span class="pip"></span>
+            </div>
+            <div class="column">
+              <span class="pip"></span>
+              <span class="pip"></span>
+            </div>
+          </div>
+          <div class="face-5">
+            <div class="column">
+              <span class="pip"></span>
+              <span class="pip"></span>
+            </div>
+            <div class="column">
+              <span class="pip"></span>
+            </div>
+            <div class="column">
+              <span class="pip"></span>
+              <span class="pip"></span>
+            </div>
+          </div>
+          <div class="face-6">
+            <div class="column">
+              <span class="pip"></span>
+              <span class="pip"></span>
+              <span class="pip"></span>
+            </div>
+            <div class="column">
+              <span class="pip"></span>
+              <span class="pip"></span>
+              <span class="pip"></span>
+            </div>
+          </div>
+           -->
+      </dice>
+      <game id="game-space">
+        <span>
+          <label for="Number of Players">Number of Players:
+            <input type="text" id="number" name="Number of players" value="" placeholder="Number of players?">
+              <button type="button" name="Start">Start</button>
+          </label>
+        </span>
+      </game>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.8/firebase.js"></script>
+    <script src="./js/main.js" charset="utf-8"></script>
+  </body>
+</html>
